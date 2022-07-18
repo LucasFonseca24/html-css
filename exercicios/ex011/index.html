@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>midias em HTML</title>
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+    <p>tente abrir esse site em varios dispositivos diferentes ou simplesmete aumente o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px )" srcset="fotos/fotopequena.jpg.jfif" type="image/jpeg">
+        <source media="(max-width: 1050px)" srcset="fotos/fotomedia.jpg" type="image/jpeg">
+        <img src="fotos/fotogrande.jpeg" alt="foto grande">
+    </picture>
+    <h1>reproduzindo audios</h1>
+    <p>vamos aprender a reproduzir audio em html 5</p>
+    <audio src="midia/ColdplayParadise.mp3"  controls >
+    </audio>
+
+    <audio preload="metadata" autoplay controls>
+        <source src="midia/ColdplayParadise.mp3" type="audio/mpeg"><source src="midia/ColdplayParadise.mp3" type="audio/mpeg">
+        <p>infelizmente meu navegador não toca audio <a href="midia/ColdplayParadise.mp3
+            ">baixe seu arquivo aqui</a></p>
+            
+    </audio>
+</body>
+</html>
